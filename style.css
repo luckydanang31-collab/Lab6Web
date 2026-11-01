@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #173f75;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: #173f75;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.counter {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #3478c8;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #173f75;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Class Toggle Latihan 3 */
+.highlight {
+  color: #173f75;
+  background-color: #e6f1ff;
+  border-left: 4px solid #3478c8;
+  padding: 12px;
+}
+
+.teks-besar {
+  font-size: 1.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Info & Pesan */
+#pesanForm, #pesanTugas {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #2b6cb0;
+  margin-top: 4px;
+}
+
+/* Styles To-Do List */
+.form-inline {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-inline input {
+  flex: 1;
+}
+
+#daftarTugas {
+  list-style-type: none;
+}
+
+#daftarTugas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+#daftarTugas li.selesai span {
+  text-decoration: line-through;
+  color: #687386;
+}
+
+.btn-hapus {
+  background-color: #dc3545;
+  margin-left: 5px;
+}
+
+.btn-hapus:hover {
+  background-color: #bd2130;
+}

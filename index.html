@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum 6 - JavaScript DOM & Event Handling</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="container">
+    <h1>Praktikum JavaScript DOM & Event Handling</h1>
+
+    <!-- Latihan 1 & 2: Manipulasi Teks & Event Click -->
+    <section class="card">
+      <h2 id="judul">Latihan DOM</h2>
+      <p id="pesan">Belum ada tindakan.</p>
+      <div class="button-group">
+        <button id="tombolAksi" type="button">Klik Saya</button>
+        <button id="tombolSembunyi" type="button">Sembunyikan/Tampilkan Teks</button>
+      </div>
+    </section>
+
+    <!-- Latihan 3: Toggle Class CSS -->
+    <section class="card">
+      <h2>Latihan Stylis / Styling Class</h2>
+      <p id="teksGaya">Paragraf ini akan berubah gaya visualnya secara dinamis.</p>
+      <button id="tombolGaya" type="button">Toggle Highlight</button>
+    </section>
+
+    <!-- Latihan 4 & Mini Project: Form Pendaftaran Workshop -->
+    <section class="card">
+      <h2>Mini Project: Form Pendaftaran Workshop</h2>
+      
+      <form id="formPendaftaran" novalidate>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap (min. 3 karakter):</label>
+          <input id="nama" name="nama" type="text" maxlength="40">
+          <p class="counter">Jumlah karakter: <span id="jumlahKarakter">0</span>/40</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email">
+        </div>
+
+        <div class="form-group">
+          <label for="usia">Usia (17 - 100 tahun):</label>
+          <input id="usia" name="usia" type="number" min="17" max="100">
+        </div>
+
+        <div class="form-group">
+          <label for="sesi">Pilih Sesi Workshop:</label>
+          <select id="sesi" name="sesi">
+            <option value="">-- Pilih Sesi --</option>
+            <option value="Web Frontend (React)">Web Frontend (React)</option>
+            <option value="Backend Development (Node.js)">Backend Development (Node.js)</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+          </select>
+          <p id="infoSesi" class="info-text"></p>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-primary">Daftar</button>
+          <button type="button" id="btnReset" class="btn-secondary">Reset Form</button>
+        </div>
+      </form>
+
+      <p id="pesanForm" aria-live="polite"></p>
+    </section>
+
+    <!-- Latihan 6 & Eksperimen Mandiri: To-do List -->
+    <section class="card">
+      <h2>Latihan 6: Daftar Tugas (To-Do List)</h2>
+      <div class="form-inline">
+        <input id="inputTugas" type="text" placeholder="Tulis tugas baru...">
+        <button id="tambahTugas" type="button">Tambah</button>
+      </div>
+      <p id="pesanTugas" aria-live="polite"></p>
+      <ul id="daftarTugas"></ul>
+    </section>
+  </main>
+
+</body>
+</html>
